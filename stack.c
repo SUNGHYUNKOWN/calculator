@@ -3,6 +3,8 @@
 #include "stack.h"
 #include <string.h>
 
+static const char* STUDENT_INFO = "202211100 권성현";
+
 Stack * create_stack(int initial_size)
 {
 	Stack * s = (Stack *)malloc(sizeof(Stack));
@@ -73,4 +75,5 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
